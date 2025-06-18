@@ -80,6 +80,10 @@ button:hover {
     font-size: 125px;
 }
 
+.cell:hover {
+    background-color: lightgrey;
+}
+
 .modal {
     border-radius: 10px;
     width: 400px;
