@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.message {
+    height: 40px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: purple;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 150px;
+}
+
+button:hover {
+  transform: scale(1); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.player-container {
+    display: flex;
+    margin-bottom: 10px;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.player-box {
+    display: flex;
+    font-size: 20px;
+}
+
+.player-title {
+    margin-right: 5px;
+}
+
+.x-title {
+    color: blue;
+}
+
+.o-title {
+    color: red;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(3, 125px);
+}
+
+.cell {
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 125px;
+}
+
+.modal {
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.play-again {
+    font-size: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 325px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
